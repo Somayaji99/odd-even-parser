@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+<body>
+  <label>Enter number</label>
+ <input type="number" id="Input">
+ <button  type = "button" onclick = 'test()'>Submit</button><br>
+  <span id="errorname"></span>
+
+  <script type="text/javascript">
+    function test() {
+     var x = document.getElementById("Input").value;
+      
+      if( x < 0){
+      document.getElementById('errorname').innerHTML="enter positive number";
+      
+    }
+    else
+    {
+      console.log(x);
+      var number = parseInt(x);
+      document.getElementById('errorname').innerHTML = number+2 +  ","  + parseInt(number+4)  +  "," +  parseInt(number+6) ;
+    }
+    
+    // else
+    // {
+    // document.getElementById('errorname').innerHTML = number+2 +  "," + number+4  + ","  + number+6 ;
+    // }
+    
+    }
+    </script>
+
+</body>
+</html>
